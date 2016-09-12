@@ -22,8 +22,6 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingUtilities;
-import javax.swing.text.JTextComponent;
-import freefirfiltergenerator.AboutWindow;
 /**
  *
  * @author Jean
@@ -483,7 +481,7 @@ public class FreeFirFilterGeneratorForm extends javax.swing.JFrame {
         
         JFileChooser fs = new JFileChooser();
         fs.setDialogTitle("Save filter impulse response");
-        fs.setFileFilter(new FileNameExtensionFilter("Text file (.txt)", ".txt"));
+        fs.setFileFilter(new FileNameExtensionFilter("Text file (.txt)","txt"));
         fs.setCurrentDirectory(new File(saveImpulsePath));
         int result = fs.showSaveDialog(null);
         if(result == JFileChooser.APPROVE_OPTION) {
